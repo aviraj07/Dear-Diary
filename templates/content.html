@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Content
+{% endblock %}
+
+{% block main %}
+
+    <form action="/content" method="post">
+        <div class="form-group">
+            {{subject}}
+        </div>
+        <div class="form-group">
+            {{contents}}
+        </div>
+        <button class="btn btn-primary"type="submit">Back</button>
+    </form>
+
+{% endblock %}

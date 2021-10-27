@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Content
+{% endblock %}
+
+{% block main %}
+
+    <form action="/new" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject" placeholder="Subject" type="text">
+        </div>
+        <div class="form-group">
+            <textarea name="content" maxlength="6000" placeholder="You can do it." id="content" rows="16" cols="68" style="font-size: 17px;" width="100%"></textarea>
+        </div>
+        <button class="btn btn-primary"type="submit">Done</button>
+    </form>
+
+{% endblock %}

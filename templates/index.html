@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <th>Date</th>
+            <th>Subject</th>
+        </thead>
+        <tbody>
+            {% for data in user_data %}
+            <tr>
+                <td><a class="nav-link" href="/content" id="date" onclick="myfunction()">{{data.date}}</a></td>
+                <td>{{data.subject}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+    <form action="/content" method="get">
+        <input type="hidden" value="var" name="dat">
+    </form>
+{% endblock %}
