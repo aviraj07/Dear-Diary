@@ -5,60 +5,26 @@ It is a web based app that makes it easy for you to keep your secrets.
 - You need to have flask installed on your local machine.
 - Download the zip.
 - Go into this project's directory and run `flask run`.
-- Your application will run.
+- You'll be able to run the application.
 - To install flask on your machine, [click here](https://phoenixnap.com/kb/install-flask).
 
 ## Usage
 - After running the application, you need to register (if you're new a user) to use the webapp.
 - Then you can click on **New** to create a new page in your diary.
 - You can start writing your diary with a subject and body.
-- Clicking on 
-- 
-So here's a decription for my code:
-1.  application.py
-In appliaction.py I have first included all the files required for it
-mainly cs50, flask, and session. Then I have configured the application
-and autoreloaded the templates. To ensure the responses that server receive
-aren't cached I have included  the app route for that. Configured session to use
-filesystem instead of using signed cookies. Then linked my SQL database file.
-To store date and time, made a variable using the library.
-The first route is for index page wherein the necessary condition is that you need to
-login. then index.html is loaded. The next route is for login wherein all the
-session that is stored is cleared then you can type your username and passwords(which will be stored as hash in database)
-to login to your account. If any error occurs that will be redirected to apology page via apology function in helper.py(for this I have refered it from finance problem in CS50).
-In logout route simply the session that is stored when you login is cleared.
-If you're new to this website you can register for a account by creating a username
-and password, it checks for your username that it shouldn't be present in database and you passwords labels should match.
-Then the route for new is defined if you logged in your account you can create a new writeup for
-your diary by simply clicking on new button in your webpage. Whaterver you type in subject and content that is stored.
-Then the route for content is defined it will load its html page.
-At last to handle errors some routes are defined (took references from CS50 finance problem).
+- Clicking on **Save** button to save the writeup.
+- On the index, you can see the date and subject of your writeup.
 
+## Structure/Design of program
+It is mainly written in Flask. HTML and CSS used for layout and styling.
+<br>
+Main files:
+<br>
+* *application.py* - It is configured to render the layout pages for the webapp as per the requirement. Also, it helps to act as a mediator between database and webapp. It takes the data that the user typed and store in the database.
+* *static files* - It include the required styling css page to help user to have a good experience of the webapp.
+* *templates* - These include all the html pages of the webapp from a basic layout file to each and every html page of the webapp.
+* *helpers.py* - It contains the functions required in application.py like apology to generate user-friendly errors.
+* *requirements.txt* - It contains all the library and tools required to run this webapp.
 
-2. static
-In static only the elements for style are defined which are used to create webpages somewhat pretty!
-
-3. templates
-It has 7 html files. first is apology wherein the content for apology is defined to give you user-friendly errors.
-Second is content.html it provides you the content of your writeup.
-Third is index.html, it gives you the index page of your webpage. Fourth is layout.html which helps you to remove
-redundancy in your html pages. Fivth is login.html, it helps you to provide the lookup of your login page.
-Sixth is new.html it helps you to create new writeups for your diary. And last is register.html
-which helps you to register in your diary.
-
-4. data.db
-It keeps track of your data.
-It has two table user_info to keep track of your login information and second to contain your wrtieups.
-
-5. helpers.py
-It contains some of the functions that help in application.py like apology to generate user_friendly erros.
-
-6. README.md
-That's what it is!
-
-7. requirements.txt
-This text file contains all the libraries that you would need to run this application.
-
-Conclusion
-You can simply copy these your files in your text-editor by use it.
-:).# Dear-Diary
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
