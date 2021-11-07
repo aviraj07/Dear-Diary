@@ -2,8 +2,8 @@
 It is a web based app that makes it easy for you to keep your secrets.
 
 ## Installation
-- You need to have flask installed on your local machine.
-- Download the zip.
+- You need to have **flask** installed on your local machine.
+- Download this zip code.
 - Go into this project's directory and run `flask run`.
 - You'll be able to run the application.
 - To install flask on your machine, [click here](https://phoenixnap.com/kb/install-flask).
@@ -16,7 +16,7 @@ It is a web based app that makes it easy for you to keep your secrets.
 - On the index, you can see the date and subject of your writeup.
 
 ## Structure/Design of program
-It is mainly written in Flask. HTML and CSS used for layout and styling.
+It is mainly written in Flask. HTML and CSS are used for layout and styling.
 <br>
 Main files:
 <br>
