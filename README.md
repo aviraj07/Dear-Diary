@@ -1,6 +1,4 @@
-# Dear Diary
-
-## Description: Your personal Diary.
+# Your personal Diary.
 It is a web based app that makes it easy for you to keep your secrets.
 
 ## Installation
@@ -10,7 +8,12 @@ It is a web based app that makes it easy for you to keep your secrets.
 - Your application will run.
 - To install flask on your machine, [click here](https://phoenixnap.com/kb/install-flask).
 
-
+## Usage
+- After running the application, you need to register (if you're new a user) to use the webapp.
+- Then you can click on **New** to create a new page in your diary.
+- You can start writing your diary with a subject and body.
+- Clicking on 
+- 
 So here's a decription for my code:
 1.  application.py
 In appliaction.py I have first included all the files required for it
