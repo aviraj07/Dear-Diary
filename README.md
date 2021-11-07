@@ -1,6 +1,8 @@
 # Your personal Diary.
 It is a web based app that makes it easy for you to keep your secrets.
 
+<br>
+<a href="https://youtu.be/i9e0uKmePPk">See it in action</a>
 ## Installation
 - You need to have **flask** installed on your local machine.
 - Download this zip code.
