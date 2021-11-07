@@ -1,11 +1,15 @@
-# YOUR PROJECT TITLE
-#### Video Demo:  https://youtu.be/i9e0uKmePPk
-#### Description: Your personal Diary.
-Hello guys, this is my final project for CS50x Introduction to Computer Science.
+# Dear Diary
 
-We in this busy life tends to forget the importance of having personal time which we need to, inspired by it
-I made a project on creating a Diary in which you can write whatever you want and wherever you're because one cannot
-carry a notebook with him/her but our phones/laptop can so here's a virtual diary for you:).
+## Description: Your personal Diary.
+It is a web based app that makes it easy for you to keep your secrets.
+
+## Installation
+- You need to have flask installed on your local machine.
+- Download the zip.
+- Go into this project's directory and run `flask run`.
+- Your application will run.
+- To install flask on your machine, [click here](https://phoenixnap.com/kb/install-flask).
+
 
 So here's a decription for my code:
 1.  application.py
