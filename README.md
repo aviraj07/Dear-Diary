@@ -32,4 +32,5 @@ Main files:
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Video Preview
 ![Preview](./ezgif.com-gif-maker(7).gif)
